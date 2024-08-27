@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+.header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/header-image.png);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.logo {
+	width: 150px;
+	cursor: pointer;
+	
+}
+
+.lang_btn {
+	display: block;
+	align-items: center;
+	background: transparent;
+	border: 1px solid white;
+	padding: 7px 16px;
+}
+
+.lang_btn img {
+	width: 10px;
+}
+
+
+.login {
+	background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), transparent;
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    /* font-weight: 600; */
+    width: 350px;
+    padding: 33px 26px;
+    border-radius: 5px;
+}
+
+.login h1 {
+	font-size: 30px;
+    line-height: 49px;
+    padding-bottom: 12px;
+}
+
+.login p{
+	font-size: 12px;
+}
+
+.login label{
+	font-size: 13px;
+}
+.email_signup{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	margin: 5px 130px;
+}
+
+.email_signup input{
+	outline: 0;
+    border: 0;
+    height: 40px;
+    width: 300px;
+    color: #bcbcbc;
+    margin: 4px;
+    padding: 0px 16px;
+    border-radius: 4px;
+    background-color: grey;
+    color: white;
+}
+
+.email_signup input::placeholder{
+    color: white;
+}
+
+.email_signup button{
+	background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-weight: bold;
+    width: 300px;
+    margin-top: 27px;
+    border-radius: 5px;
+	
+}
+
+
+.help{
+	display: flex;
+	
+	justify-content: space-between;
+}
+
+.help input, label, p{
+	display: inline;
+}
+
+.footer{
+	padding: 40px 15% 10px;
+	color: #bcbcbc;
+}
+
+.footer h2{
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: 75px;
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer a{
+	font-size: 14px;
+	color: #bcbcbc;
+	padding: 4px 2px;
+}
+
+.footer .lang_btn{
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 15px 0px;
+}
+
+.footer p{
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+.header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/header-image.png);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 150px;
+	cursor: pointer;
+}
+
+.siteName{
+	font-size: 30px;
+	color: #db0001;
+}
+
+nav button {
+	border: 0;
+	outline: 0;
+	background: #db0001;
+	color: #fff;
+	padding: 7px 20px;
+	font-size: 12px;
+	border-radius: 4px;
+	margin-left: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.back_login{
+	
+	border: 0;
+	outline: 0;
+	background: #db0001;
+	color: #fff;
+	padding: 7px 20px;
+	font-size: 12px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 20px;
+	border: 1px solid white;
+}
+
+.back_login:hover{
+	background: #bb0001;
+}
+
+.sign-in:hover{
+	background: #bb0001;
+}
+
+.lang_btn {
+	display: inline-flex;
+	align-items: center;
+	background: transparent;
+	border: 1px solid white;
+	padding: 7px 16px;
+}
+
+.lang_btn img {
+	width: 10px;
+}
+
+.header-content {
+	top: 40%;
+    left: 35%;
+    position: absolute;
+    transform: translate(-26%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 600;
+}
+
+.header-content h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+    line-height: 49px;
+	font-weight: bold;
+}
+
+.header-content p{
+	font-size: 18px;
+    line-height: 40px;
+	font-weight: 100;
+}
+
+.email_signup{
+	background: #fff;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	overflow: hidden;
+	margin: 5px 130px;
+}
+
+.email_signup input{
+	flex: 1;
+	border: 0;
+	outline: 0;
+	margin-left: 20px;
+	font-size: 15px;
+    font-weight: bold;
+}
+
+.email_signup button{
+	background: #db0001;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 15px 30px;
+	font-weight: bold;
+	
+}
+
+.separate{
+	height: 8px;
+	width: 100%;
+	background-color: #303030;
+}
+
+.features{
+	padding: 50px 12%;
+	font-size: 22px;
+	
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	padding: 10px 0px;
+}
+
+.text-col{
+	flex-basis: 50%;
+	margin-bottom: 20px;
+}
+
+.img-col{
+	flex-basis: 50%;
+	margin-bottom: 20px;
+}
+
+.img-col img{
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+.features h2{
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+/* faq */
+
+.faq{
+	padding: 10px 12%;
+	text-align: center;
+	font-size: 24px;
+}
+
+.faq h2{
+	margin-top: 35px;
+}
+
+.accordian{
+	margin: 60px auto;
+	width: 100%;
+	max-width: 750px;
+}
+
+.accordian li{
+	list-style: none;
+	width: 100%;
+	padding: 5px;
+	
+}
+
+.accordian li label{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	background: #303030;
+	margin-bottom: 2px;
+	cursor: pointer;
+	position: relative;
+	font-weight: bold;
+}
+
+label::after{
+	content: '+';
+	font-size: 34px;
+	position: absolute;
+	right: 20px;
+	transition: transform(0.5s);
+}
+
+input[type = "radio"]{
+	display: none;
+}
+
+.accordian .content{
+	background: #303030;
+	text-align: left;
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type = "radio"]:checked + label + .content{
+	max-height: 600px;
+	padding: 20px;
+}
+
+.accordian input[type = "radio"]:checked + label::after{
+	transform: rotate(135deg);
+}
+
+.accordian p{
+	font-size: 20px;
+	padding: 10px;
+}
+
+.faq .email_signup{
+	
+	max-width: 600px;
+	margin: 20px auto 60px;
+	
+}
+
+.faq small{
+	font-size: 18px;
+}
+
+
+/*footer*/
+
+.footer{
+	padding: 40px 15% 10px;
+	color: #bcbcbc;
+}
+
+.footer h2{
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: 75px;
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer a{
+	font-size: 14px;
+	color: #bcbcbc;
+	padding: 4px 2px;
+}
+
+.footer .lang_btn{
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 15px 0px;
+}
+
+.footer p{
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
